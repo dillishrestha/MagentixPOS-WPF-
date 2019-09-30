@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B58CBF09-52EA-4466-B5D2-2664018E7561}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Magentix.Presentation</RootNamespace>
+    <AssemblyName>Magentix.Presentation</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <Utf8Output>true</Utf8Output>
+    <ExpressionBlendVersion>4.0.20525.0</ExpressionBlendVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>ftp://ftp.Magentixpos.com/public_html/Magentixapp/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Background</UpdateMode>
+    <UpdateInterval>2</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>true</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://www.Magentixpos.com/Magentixapp/</InstallUrl>
+    <TargetCulture>tr</TargetCulture>
+    <ProductName>Magentix Pos</ProductName>
+    <PublisherName>Ozgu Technology</PublisherName>
+    <SuiteName>Magentix</SuiteName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>13</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>magentix.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>D6005C72CA1B30E38C740D138C6CE1EAEFBF8EFE</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Magentix.Presentation_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.WPF, Version=4.7.0.37774, Culture=neutral, PublicKeyToken=0758b07a11a4f466, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.WPF.4.7.0.9\lib\net40\FontAwesome.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="GongSolutions.Wpf.DragDrop">
+      <HintPath>..\Lib\DragDrop\GongSolutions.Wpf.DragDrop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism">
+      <HintPath>..\Lib\Microsoft.Practices.Prism.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism.Interactivity">
+      <HintPath>..\Lib\Microsoft.Practices.Prism.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Prism.MefExtensions">
+      <HintPath>..\Lib\Microsoft.Practices.Prism.MefExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\Lib\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MessageClientStatusView.xaml.cs">
+      <DependentUpon>MessageClientStatusView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Bootstrapper.cs" />
+    <Compile Include="Shell.xaml.cs">
+      <DependentUpon>Shell.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WorkPeriodStatusView.xaml.cs">
+      <DependentUpon>WorkPeriodStatusView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <None Include="Magentix.Presentation_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Common.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MessageClientStatusView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Shell.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\MainExpanderResources.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WorkPeriodStatusView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lib\DataGridFilterLibrary\DataGridFilterLibrary.csproj">
+      <Project>{512FD53F-9AD1-46A1-A961-9FABDFAD50C5}</Project>
+      <Name>DataGridFilterLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lib\FastButton\FastButton.csproj">
+      <Project>{7519cb8c-3c25-4f74-8946-93ecb7450c31}</Project>
+      <Name>FastButton</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Magentix.Localization\Magentix.Localization.csproj">
+      <Project>{406B96A6-C886-4149-AD88-A2402EDB2B90}</Project>
+      <Name>Magentix.Localization</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Magentix.Modules.AccountModule\Magentix.Modules.AccountModule.csproj">
+      <Project>{EDEF0022-075C-4DEC-853F-6558F9E8438A}</Project>
+      <Name>Magentix.Modules.AccountModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Magentix.Modules.AutomationModule\Magentix.Modules.AutomationModule.csproj">
+      <Project>{EAA09B33-28AD-4F33-A2E8-4DBCB42457D0}</Project>
+      <Name>Magentix.Modules.AutomationModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Magentix.Modules.CidMonitor\Magentix.Modules.CidMonitor.csproj">
+      <Project>{629A2D7C-9014-4A85-A1E9-26161D5B3043}</Project>
+      <Name>Magentix.Modules.CidMonitor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Magentix.Modules.DepartmentModule\Magentix.Modules.DepartmentModule.csproj">
+      <Project>{3F15FA1B-DB89-418B-8E7C-E7747D9098FF}</Project>
+      <Name>Magentix.Modules.DepartmentModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Magentix.Modules.EntityModule\Magentix.Modules.EntityModule.csproj">
+      <Project>{0c2b6973-e2c6-4076-9828-ebe0e81405a6}</Project>
+      <Name>Magentix.Modules.EntityModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Magentix.Modules.InventoryModule\Magentix.Modules.InventoryModule.csproj">
+      <Project>{E93B6838-9B18-4718-AB7B-2EA5232518C3}</Project>
+      <Name>Magentix.Modules.InventoryModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Magentix.Modules.LoginModule\Magentix.Modules.LoginModule.csproj">
+      <Project>{534CEC53-1EBC-4386-95E3-0E451FCB388A}</Project>
+      <Name>Magentix.Modules.LoginModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Magentix.Modules.ManagementModule\Magentix.Modules.ManagementModule.csproj">
+      <Project>{F7FB0F2D-DBD6-4C97-AC45-CE4DC5F2FBD6}</Project>
+      <Name>Magentix.Modules.ManagementModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Magentix.Modules.MarketModule\Magentix.Modules.MarketModule.csproj">
+      <Project>{1a8e8264-af81-47c6-b9ad-c0e408fb58fa}</Project>
+      <Name>Magentix.Modules.MarketModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Magentix.Modules.ModifierModule\Magentix.Modules.ModifierModule.csproj">
+      <Project>{51FCBCEF-D8B5-49D5-B18D-E6C7D5217D21}</Project>
+      <Name>Magentix.Modules.ModifierModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Magentix.Modules.NavigationModule\Magentix.Modules.NavigationModule.csproj">
+      <Project>{9497C48E-B9B5-4869-820E-09ECE4347632}</Project>
+      <Name>Magentix.Modules.NavigationModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Magentix.Modules.PaymentModule\Magentix.Modules.PaymentModule.csproj">
+      <Project>{F30AA5E9-0C10-438D-9DC7-5A8F3FC5D95D}</Project>
+      <Name>Magentix.Modules.PaymentModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Magentix.Modules.PosModule\Magentix.Modules.PosModule.csproj">
+      <Project>{B75C6387-9855-44BF-886E-5BB60D643AD2}</Project>
+      <Name>Magentix.Modules.PosModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Magentix.Modules.PrinterModule\Magentix.Modules.PrinterModule.csproj">
+      <Project>{0FE1BF9D-225A-4D7F-8AB5-102138110999}</Project>
+      <Name>Magentix.Modules.PrinterModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Magentix.Modules.TaskModule\Magentix.Modules.TaskModule.csproj">
+      <Project>{3E45DB85-2314-4874-BC75-44838CB129A4}</Project>
+      <Name>Magentix.Modules.TaskModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Magentix.Modules.UserModule\Magentix.Modules.UserModule.csproj">
+      <Project>{1AE61C89-EBFD-498D-9F53-6319B302CDBF}</Project>
+      <Name>Magentix.Modules.UserModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Magentix.Domain\Magentix.Domain.csproj">
+      <Project>{2386F6A0-91B2-4D1A-8DBC-92109924AFFE}</Project>
+      <Name>Magentix.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Magentix.Infrastructure.Data\Magentix.Infrastructure.Data.csproj">
+      <Project>{2D64F506-D566-4CA5-A19C-BCB5F9A2E7F4}</Project>
+      <Name>Magentix.Infrastructure.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Magentix.Infrastructure\Magentix.Infrastructure.csproj">
+      <Project>{B184E8F8-A507-4C3D-B580-184E3776A95C}</Project>
+      <Name>Magentix.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Magentix.Modules.MenuModule\Magentix.Modules.MenuModule.csproj">
+      <Project>{8DA03815-ED56-40C5-83CA-6DFBB1F19C4F}</Project>
+      <Name>Magentix.Modules.MenuModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Magentix.Modules.SettingsModule\Magentix.Modules.SettingsModule.csproj">
+      <Project>{3B7CF671-E246-4284-9DEB-F7F8CD784ED1}</Project>
+      <Name>Magentix.Modules.SettingsModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Magentix.Modules.TicketModule\Magentix.Modules.TicketModule.csproj">
+      <Project>{9E6FF3D9-BAE7-4E48-B144-0859BE28C570}</Project>
+      <Name>Magentix.Modules.TicketModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Magentix.Modules.WorkperiodModule\Magentix.Modules.WorkperiodModule.csproj">
+      <Project>{19D333D1-D336-41C3-9B1E-55E760E6B026}</Project>
+      <Name>Magentix.Modules.WorkperiodModule</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Magentix.Persistance.DBMigration\Magentix.Persistance.DBMigration.csproj">
+      <Project>{3AED3A4C-F3D7-4D29-BF58-85743E4F7AFD}</Project>
+      <Name>Magentix.Persistance.DBMigration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Magentix.Persistance\Magentix.Persistance.csproj">
+      <Project>{9ACA7797-5C2A-4435-B991-E59462ACDAF6}</Project>
+      <Name>Magentix.Persistance</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Magentix.Presentation.Common\Magentix.Presentation.Common.csproj">
+      <Project>{FE1A894E-D55E-4CEA-980A-1C678A2453FC}</Project>
+      <Name>Magentix.Presentation.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Magentix.Presentation.Controls\Magentix.Presentation.Controls.csproj">
+      <Project>{3C52B602-3CB1-45EE-B9A7-93B24C760A88}</Project>
+      <Name>Magentix.Presentation.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Magentix.Presentation.Services\Magentix.Presentation.Services.csproj">
+      <Project>{7DD8848C-3ADB-45B3-BD49-10AF3AEE2521}</Project>
+      <Name>Magentix.Presentation.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Magentix.Presentation.ViewModels\Magentix.Presentation.ViewModels.csproj">
+      <Project>{04ED7BE0-8768-4A8D-B1ED-C92CB60789EF}</Project>
+      <Name>Magentix.Presentation.ViewModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Magentix.Services\Magentix.Services.csproj">
+      <Project>{413B698C-0D7D-4FCD-9F16-AF51AED4E647}</Project>
+      <Name>Magentix.Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Magentix.Modules.BasicReports\Magentix.Modules.BasicReports.csproj">
+      <Project>{4F2C080C-FF9C-4604-8DAF-C5732BC17A05}</Project>
+      <Name>Magentix.Modules.BasicReports</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\apple-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\empty.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Images\icon.png" />
+    <Content Include="Imports\menu.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Imports\table.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="magentix.ico" />
+    <Content Include="migrate.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>IF NOT "$(ConfigurationName)"=="Release" GOTO End
+
+copy "$(TargetDir)$(TargetFileName)" "$(SolutionDir)MagentixSetup\src"
+copy "$(TargetDir)$(TargetFileName).manifest" "$(SolutionDir)MagentixSetup\src"
+copy "$(TargetDir)$(TargetFileName).config" "$(SolutionDir)MagentixSetup\src"
+copy "$(TargetDir)Microsoft.Practices.Prism.Interactivity.dll" "$(SolutionDir)MagentixSetup\src"
+copy "$(TargetDir)Microsoft.Practices.Prism.MefExtensions.dll" "$(SolutionDir)MagentixSetup\src"
+
+:End</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
